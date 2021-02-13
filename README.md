@@ -2,11 +2,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  https://github.com/mygithub23/Note-Taker
+  https://github.com/mygithub23/Employees-Management-Syste
   <br />
    
 
-  <h3 align="center">Employees Management Systemr</h3>
+  <h3 align="center">Employees Management System</h3>
 
   <p align="center">
     <a href="https://github.com/mygithub23/Employees-Management-System"><strong>Explore the docs »</strong></a>
