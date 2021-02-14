@@ -90,47 +90,47 @@ const promptUser = () => {
     .then((answers) => {
       const {choices} = answers;
 
-        if (choices === 'View All Employees') {
-            
-            allEmployees();
 
+        if (choices === 'View All Employees') {
+
+            getData('employees_view');
         }
 
         if (choices === 'View All Departments') {
-            allDepartments();
-      }
+            getData('departments_view');
+        }
 
         if (choices === 'View All Employees By Department') {
-            employeesListByDepartment();
+            getData('emplyeeslistbydept_view');
         }
 
         if (choices === 'View All Roles') {
-            allRoles();
+            getData('roles_view');
         }
 
         if (choices === 'View All Employees By Roles') {
-            employeesListByRole();
+            getData('employeelistbyrole_view');
         }
-        
+
         if (choices === 'View All Employees By Manager') {
-            employeesListByManager();
+            getData('employesslistbymanager_view');
         }
 
         if (choices === 'View Unfulfilled Positions Roles') {
-            unfulfilledRoles();
+            getData('unfulfilledroles_view');
         }
 
         if (choices === 'View Employees Count By Role') {
-            employeesCountByRole();
+            getData('empcountbyrole_view');
         }
 
         if (choices === 'View Employees Count By Department') {
-            employeesCountByDepartment();
+            getData('empcountbydept_view');
         }
 
         if (choices === 'View Salary Metrics By Department') {
-            currentSalryInsightByDepartment();
-        }        
+            getData('deptsalaryinsights_view');
+        }      
 
         if (choices === 'Exit') {
             connection.end();
@@ -139,148 +139,9 @@ const promptUser = () => {
 };
 
 
-const allEmployees = () => {
-    let sql = `select * from employees_view`;
+const getData = (tableName) => {
+    let sql = `select * from ${tableName}`;
     connection.promise().query(sql, (error, response) => {
-        if (error) throw error;
-        log("                           ");
-        log(
-            chalk.white("===================================================================================="));
-        log("                           ");
-        console.table(response);
-        log(chalk.white.bold(`====================================================================================`));
-        log("                           ");
-        promptUser();
-    });
-};
-
-const allDepartments = () => {
-    const sql = `SELECT * FROM departments_view`;
-    connection.promise().query(sql, (error, response) => {
-        if (error) throw error;
-        log("                           ");
-        log(
-            chalk.white("===================================================================================="));
-        log("                           ");
-        console.table(response);
-        log(chalk.white.bold(`====================================================================================`));
-        log("                           ");
-        promptUser();
-    });
-};
-
-
-const allRoles = () => {
-    const sql = `SELECT * FROM roles_view`
-    connection.promise().query(sql, (error, response) => {
-        log("                           ");
-        log(
-            chalk.white("===================================================================================="));
-        log("                           ");
-        console.table(response);
-        log(chalk.white.bold(`====================================================================================`));
-        log("                           ");
-        promptUser();
-    });
-};
-
-
-
-
-const employeesListByDepartment = () => {
-    const sql = `SELECT * FROM emplyeeslistbydept_view`;
-    connection.query(sql, (error, response) => {
-        if (error) throw error;
-        log("                           ");
-        log(
-            chalk.white("===================================================================================="));
-        log("                           ");
-        console.table(response);
-        log(chalk.white.bold(`====================================================================================`));
-        log("                           ");
-        promptUser();
-    });
-};
-
-
-const employeesListByRole = () => {
-    const sql = `SELECT * FROM employeelistbyrole_view`;
-    connection.query(sql, (error, response) => {
-        if (error) throw error;
-        log("                           ");
-        log(
-            chalk.white("===================================================================================="));
-        log("                           ");
-        console.table(response);
-        log(chalk.white.bold(`====================================================================================`));
-        log("                           ");
-        promptUser();
-    });
-};
-
-const employeesListByManager = () => {
-    const sql = `SELECT * FROM employesslistbymanager_view`;
-    connection.query(sql, (error, response) => {
-        if (error) throw error;
-        log("                           ");
-        log(
-            chalk.white("===================================================================================="));
-        log("                           ");
-        console.table(response);
-        log(chalk.white.bold(`====================================================================================`));
-        log("                           ");
-        promptUser();
-    });
-};
-
-const unfulfilledRoles = () => {
-    const sql = `SELECT * FROM unfulfilledroles_view`;
-    connection.query(sql, (error, response) => {
-        if (error) throw error;
-        log("                           ");
-        log(
-            chalk.white("===================================================================================="));
-        log("                           ");
-        console.table(response);
-        log(chalk.white.bold(`====================================================================================`));
-        log("                           ");
-        promptUser();
-    });
-};
-
-const employeesCountByRole = () => {
-    const sql = `SELECT * FROM empcountbyrole_view`;
-    connection.query(sql, (error, response) => {
-        if (error) throw error;
-        log("                           ");
-        log(
-            chalk.white("===================================================================================="));
-        log("                           ");
-        console.table(response);
-        log(chalk.white.bold(`====================================================================================`));
-        log("                           ");
-        promptUser();
-    });
-};
-
-const employeesCountByDepartment = () => {
-    const sql = `SELECT * FROM empcountbydept_view`;
-    connection.query(sql, (error, response) => {
-        if (error) throw error;
-        log("                           ");
-        log(
-            chalk.white("===================================================================================="));
-        log("                           ");
-        console.table(response);
-        log(chalk.white.bold(`====================================================================================`));
-        log("                           ");
-        promptUser();
-    });
-};
-
-const currentSalryInsightByDepartment = () => {
-    const sql = `SELECT * FROM deptsalaryinsights_view`;
-    connection.query(sql, (error, response) => {
         if (error) throw error;
         log("                           ");
         log(

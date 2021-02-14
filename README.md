@@ -2,18 +2,20 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  https://github.com/mygithub23/Employees-Management-Syste
+  https://github.com/mygithub23/Note-Taker
   <br />
    
 
-  <h3 align="center">Employees Management System</h3>
+  <h3 align="center">Employees Management Systemr</h3>
 
   <p align="center">
     <a href="https://github.com/mygithub23/Employees-Management-System"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-   <h3 align="center"> <a href="https://www.screencast.com/t/3UEmHjtP">View Demo</a> </h3>
-  
+   <h3 align="center"> <a href="https://www.screencast.com/t/3UEmHjtP">View Demo on Browser</a> </h3>
+  <!-- copy and paste. Modify height and width if desired. -->
+<iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
+        style="overflow:hidden;" src="https://www.screencast.com/users/kard424/folders/Capture/media/a00f5c0b-eccd-46d7-a33b-d4494870e684/embed" height="1034" width="1270" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </p>
 </p>
 
@@ -55,6 +57,8 @@
 Employees Management System
 
 ## Screenshots
+
+<img src="./img/emp-eer-diagram.svg">
 <img src="./img/2021-02-13_01-41-01.png">
 <img src="./img/2021-02-13_01-41-52.png">
 <img src="./img/2021-02-13_01-42-52.png">
