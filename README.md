@@ -4,21 +4,23 @@
 <p align="center">
   https://github.com/mygithub23/Note-Taker
   <br />
-   
+ </p>
 
   <h3 align="center">Employees Management Systemr</h3>
 
   <p align="center">
     <a href="https://github.com/mygithub23/Employees-Management-System"><strong>Explore the docs »</strong></a>
-  <img src="./img/empVideo11.gif">
-  <img src="./img/empVideo1.gif">
-  <img src="./img/empVideo2.gif">
-   <video src="https://www.screencast.com/users/kard424/folders/Capture/media/a00f5c0b-eccd-46d7-a33b-d4494870e684">
-    <br />
-    <br />
-   
-
   </p>
+  <p>
+    <br />
+    <br />
+    <img src="./img/empVideo11.gif">
+    <br />
+    <br />
+    <img src="./img/empVideo2.gif">
+
+      <br />
+      <br />
 </p>
 
 
