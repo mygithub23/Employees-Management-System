@@ -11,17 +11,16 @@
   <p align="center">
     <a href="https://github.com/mygithub23/Employees-Management-System"><strong>Explore the docs »</strong></a>
   </p>
-  <p>
-    <br />
-    <br />
+  <div>
+
     <img src="./img/empVideo11.gif">
-    <br />
-    <br />
+  </div>
+  <div>
     <img src="./img/empVideo2.gif">
 
       <br />
       <br />
-</p>
+</div>
 
 
 
