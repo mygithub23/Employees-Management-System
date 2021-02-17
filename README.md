@@ -10,12 +10,20 @@
 
   <p align="center">
     <a href="https://github.com/mygithub23/Employees-Management-System"><strong>Explore the docs »</strong></a>
+  <video src="./img/video1.gif">
+   <video src="./imgvideo2.giv">
     <br />
     <br />
    <h3 align="center"> <a href="https://www.screencast.com/t/3UEmHjtP">View Demo on Browser</a> </h3>
   <!-- copy and paste. Modify height and width if desired. -->
+  var embed = require("embed-video")
+  var projectUrl = "https://www.screencast.com/t/3UEmHjtP"
+  var prjvideoId = "3UEmHjtP"
+  
 <iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
         style="overflow:hidden;" src="https://www.screencast.com/users/kard424/folders/Capture/media/a00f5c0b-eccd-46d7-a33b-d4494870e684/embed" height="1034" width="1270" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        
+
   </p>
 </p>
 
