@@ -12,10 +12,10 @@
     <a href="https://github.com/mygithub23/Employees-Management-System"><strong>Explore the docs »</strong></a>
   </p>
   <div>
-    <img src="./img/empVideo11.gif">
+    <img src="./img/empVideo2.gif">
   </div>
   <div>
-    <img src="./img/empVideo2.gif">
+    <img src="./img/empVideo11.gif">
 </div>
 
 
